@@ -11,15 +11,46 @@ def subtract(a,b):
         return b - a
 
 
-def multipy(a, b):
+def multiply(a,b):
     return a * b
 
 
-def divide(a, b):
+def divide(a,b):
     if b == 0:
         return "divide by zero error"
     return a / b
 
+while True:
+    try:
+        a = float(input("Enter a"))
+        break
+    except:
+        print("Invalid i/p , please eneter valid number")
 
-a = int(input("Enter a"))
-b = int(input("Enter b"))
+
+
+while True:
+    try:
+        b = float(input("Enter b"))
+        break
+    except:
+        print("Invalid i/p , please eneter valid number")
+
+
+c=input("Enter operation")
+
+
+if c=="+":
+    add(a,b)
+
+elif c=="-":
+    subtract(a,b)
+
+elif c=="*":
+    multiply(a,b)
+
+elif c=="/":
+    divide(a,b)
+
+else:
+    print("Invalid operation")
