@@ -23,7 +23,7 @@ while True:
     try:
         a = float(input("Enter a"))
         break
-    except:
+    except ValueError:
         print("Invalid i/p , please eneter valid number")
 
 
@@ -32,7 +32,7 @@ while True:
     try:
         b = float(input("Enter b"))
         break
-    except:
+    except ValueError:
         print("Invalid i/p , please eneter valid number")
 
 
